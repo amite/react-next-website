@@ -2,9 +2,9 @@
   "name": "react-next-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "pages/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev"
   },
   "keywords": [],
   "author": "amite <amit.erandole@gmail.com>",
