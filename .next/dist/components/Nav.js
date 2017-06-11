@@ -34,26 +34,11 @@ var _link2 = _interopRequireDefault(_link);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/amiterandole/Documents/current/mypresentations/react-next-codelab/react-next-website/components/Nav.js';
-
 var links = [{ link: 'Home', href: '/' }, { link: 'About', href: '/about' }, { link: 'Blog', href: '/blog' }, { link: 'Contact', href: '/contact' }];
 
 var renderLinks = function renderLinks(links) {
   return links.map(function (l) {
-    return _react2.default.createElement('li', { key: l.link, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 14
-      }
-    }, _react2.default.createElement(_link2.default, { href: l.href, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      }
-    }, _react2.default.createElement('a', {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      }
-    }, l.link)));
+    return _react2.default.createElement('li', { key: l.link }, _react2.default.createElement(_link2.default, { href: l.href }, _react2.default.createElement('a', null, l.link)));
   });
 };
 
@@ -69,43 +54,7 @@ var Nav = function (_Component) {
   (0, _createClass3.default)(Nav, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('nav', { className: 'navbar navbar-default navbar-custom', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 24
-        }
-      }, _react2.default.createElement('div', { className: 'container-fluid', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 25
-        }
-      }, _react2.default.createElement('div', { className: 'navbar-header page-scroll', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      }, _react2.default.createElement('button', { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        }
-      }, _react2.default.createElement('span', { className: 'sr-only', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        }
-      }, 'Toggle navigation'), 'Menu ', _react2.default.createElement('i', { className: 'fa fa-bars', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        }
-      })), _react2.default.createElement('a', { className: 'navbar-brand', href: '/', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        }
-      }, 'React Next')), _react2.default.createElement('div', { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 35
-        }
-      }, _react2.default.createElement('ul', { className: 'nav navbar-nav navbar-right', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        }
-      }, renderLinks(links)))));
+      return _react2.default.createElement('nav', { className: 'navbar navbar-default navbar-custom' }, _react2.default.createElement('div', { className: 'container-fluid' }, _react2.default.createElement('div', { className: 'navbar-header page-scroll' }, _react2.default.createElement('button', { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#bs-example-navbar-collapse-1' }, _react2.default.createElement('span', { className: 'sr-only' }, 'Toggle navigation'), 'Menu ', _react2.default.createElement('i', { className: 'fa fa-bars' })), _react2.default.createElement('a', { className: 'navbar-brand', href: '/' }, 'React Next')), _react2.default.createElement('div', { className: 'collapse navbar-collapse', id: 'bs-example-navbar-collapse-1' }, _react2.default.createElement('ul', { className: 'nav navbar-nav navbar-right' }, renderLinks(links)))));
     }
   }]);
 

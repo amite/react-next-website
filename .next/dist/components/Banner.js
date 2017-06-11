@@ -30,9 +30,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "/Users/amiterandole/Documents/current/mypresentations/react-next-codelab/react-next-website/components/Banner.js";
-
-
 var Banner = function (_Component) {
   (0, _inherits3.default)(Banner, _Component);
 
@@ -45,11 +42,7 @@ var Banner = function (_Component) {
   (0, _createClass3.default)(Banner, [{
     key: "render",
     value: function render() {
-      return _react2.default.createElement("img", { src: "/static/img/" + this.props.img, className: "img-responsive", __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
-      });
+      return _react2.default.createElement("img", { src: "/static/img/" + this.props.img, className: "img-responsive" });
     }
   }]);
 

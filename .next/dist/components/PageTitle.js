@@ -30,9 +30,6 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/amiterandole/Documents/current/mypresentations/react-next-codelab/react-next-website/components/PageTitle.js';
-
-
 var PageTitle = function (_Component) {
   (0, _inherits3.default)(PageTitle, _Component);
 
@@ -45,12 +42,7 @@ var PageTitle = function (_Component) {
   (0, _createClass3.default)(PageTitle, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('h1', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 6
-        }
-      }, this.props.title);
+      return _react2.default.createElement('h1', null, this.props.title);
     }
   }]);
 
