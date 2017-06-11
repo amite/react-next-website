@@ -5,6 +5,8 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+require('now-logs')('my-secret-key')
+
 app.prepare()
 .then(() => {
   const server = express()
