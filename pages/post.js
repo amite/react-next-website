@@ -11,7 +11,7 @@ export default class extends React.Component {
 
   render () {
     const { title, body } = this.props.data
-    return <Layout>
+    return <Layout title={title}>
       <h1>{title}</h1>
       <Banner img={'photo-sample-image.jpg'} />
       <br/>
